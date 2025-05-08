@@ -24,9 +24,9 @@ public abstract class Character {
         this.charisma = charisma;
     }
 
-    public abstract void attack();
+    public abstract void attack(Character enemy);
 
-    public abstract  void defend();
+    public abstract  void defend(Character enemy);
 
     public String getName() {
         return name;
@@ -41,7 +41,7 @@ public abstract class Character {
     }
 
     public void setHealth(int health) {
-        this.health = health;
+        this.health = Math.max(health, 0);
     }
 
     public int getStrength() {
