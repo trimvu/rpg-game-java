@@ -8,8 +8,8 @@ public class Rogue extends Character {
     private boolean hidden;
     private int turnsHidden;
 
-    public Rogue (String name, int sneak) {
-        super(name, 9,7,2,11,8,5,15);
+    public Rogue (String name, String classTitle, int sneak) {
+        super(name, classTitle,9,7,2,11,8,5,15);
         this.sneak = sneak;
         this.hidden = false;
     }
@@ -74,7 +74,6 @@ public class Rogue extends Character {
         } else {
             System.out.println(getName() + " the rogue, was unable to hide");
             setHidden(false);
-            enemy.attack(this);
         }
     }
 

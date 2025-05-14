@@ -5,8 +5,8 @@ public class Wizard extends Character {
     private int spellStrength;
     private int availableSpells;
 
-    public Wizard (String name, int spellStrength, int availableSpells) {
-        super(name, 12,2,8,7,15,11,5);
+    public Wizard (String name, String classTitle, int spellStrength, int availableSpells) {
+        super(name, classTitle,12,2,8,7,15,11,5);
         this.spellStrength = spellStrength;
         this.availableSpells = availableSpells;
     }

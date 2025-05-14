@@ -5,6 +5,7 @@ import java.util.Objects;
 public abstract class Character {
 
     private String name;
+    private String classTitle;
     private int health;
     private int strength;
     private int constitution;
@@ -13,8 +14,9 @@ public abstract class Character {
     private int wisdom;
     private int charisma;
 
-    public Character (String name, int health, int strength, int constitution, int dexterity, int intelligence, int wisdom, int charisma) {
+    public Character (String name, String classTitle, int health, int strength, int constitution, int dexterity, int intelligence, int wisdom, int charisma) {
         this.name = name;
+        this.classTitle = classTitle;
         this.health = health;
         this.strength = strength;
         this.constitution = constitution;
@@ -34,6 +36,10 @@ public abstract class Character {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getClassTitle() {
+        return classTitle;
     }
 
     public int getHealth() {
@@ -109,6 +115,8 @@ public abstract class Character {
     public String toString() {
         return "Character{" +
                 "name='" + name + '\'' +
+                ", classTitle='" + classTitle + '\'' +
+                ", health=" + health +
                 ", strength=" + strength +
                 ", constitution=" + constitution +
                 ", dexterity=" + dexterity +

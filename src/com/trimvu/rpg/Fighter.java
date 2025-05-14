@@ -5,8 +5,8 @@ public class Fighter extends Character {
     private int strengthBonus;
     private int bonusAvailable;
 
-    public Fighter (String name, int strengthBonus, int bonusAvailable) {
-        super (name, 15, 11,7,9,5,2,8);
+    public Fighter (String name, String classTitle, int strengthBonus, int bonusAvailable) {
+        super (name, classTitle,15, 11,7,9,5,2,8);
         this.strengthBonus = strengthBonus;
         this.bonusAvailable = bonusAvailable;
     }
